@@ -1,110 +1,110 @@
 [
   {
     "id": 1,
-    "title": "The Last Summer Tale",
-    "author": "Nadia রহমান",
-    "description": "A touching story about friendship, memories, and the choices that shape our lives.",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "description": "A timeless novel about wealth, love, and the pursuit of the American Dream during the Roaring Twenties.",
     "category": "Story",
-    "available_quantity": 7,
-    "image_url": "https://example.com/images/the-last-summer-tale.jpg"
+    "available_quantity": 8,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg"
   },
   {
     "id": 2,
-    "title": "Midnight Letters",
-    "author": "Arif Hasan",
-    "description": "A heartfelt novel filled with emotion, mystery, and the power of unfinished words.",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "description": "A powerful story of justice, compassion, and racial inequality through the eyes of a young girl.",
     "category": "Story",
     "available_quantity": 5,
-    "image_url": "https://example.com/images/midnight-letters.jpg"
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780061120084-L.jpg"
   },
   {
     "id": 3,
-    "title": "The Silent River",
-    "author": "Farzana Ahmed",
-    "description": "A beautiful story of loss, hope, and discovering strength in unexpected places.",
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "description": "An inspiring novel about following your dreams and discovering your true purpose in life.",
     "category": "Story",
-    "available_quantity": 6,
-    "image_url": "https://example.com/images/the-silent-river.jpg"
+    "available_quantity": 12,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg"
   },
   {
     "id": 4,
-    "title": "React Made Simple",
-    "author": "Md. Rafiq",
-    "description": "A beginner-friendly guide to learning React with clear examples and practical projects.",
+    "title": "Eloquent JavaScript",
+    "author": "Marijn Haverbeke",
+    "description": "A modern introduction to JavaScript, covering the language from fundamentals to advanced concepts.",
     "category": "Tech",
-    "available_quantity": 10,
-    "image_url": "https://example.com/images/react-made-simple.jpg"
+    "available_quantity": 7,
+    "image_url": "https://eloquentjavascript.net/img/cover.jpg"
   },
   {
     "id": 5,
-    "title": "JavaScript Essentials",
-    "author": "Sabrina Islam",
-    "description": "A practical book covering the core concepts of JavaScript for modern web development.",
+    "title": "You Don't Know JS Yet",
+    "author": "Kyle Simpson",
+    "description": "A deep dive into JavaScript, helping developers truly understand how the language works.",
     "category": "Tech",
-    "available_quantity": 8,
-    "image_url": "https://example.com/images/javascript-essentials.jpg"
+    "available_quantity": 10,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/81kqrwS1nNL.jpg"
   },
   {
     "id": 6,
-    "title": "Modern Web Design",
-    "author": "Tanvir Hossain",
-    "description": "Learn how to build clean, responsive, and user-friendly websites with modern techniques.",
+    "title": "Learning React",
+    "author": "Alex Banks & Eve Porcello",
+    "description": "A practical guide to building modern user interfaces using React and its ecosystem.",
     "category": "Tech",
-    "available_quantity": 4,
-    "image_url": "https://example.com/images/modern-web-design.jpg"
+    "available_quantity": 6,
+    "image_url": "https://learning.oreilly.com/library/cover/9781098110321/250w/"
   },
   {
     "id": 7,
-    "title": "Exploring the Universe",
-    "author": "Dr. Laila Khan",
-    "description": "A fascinating journey through space, stars, galaxies, and the mysteries of the cosmos.",
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "description": "An accessible exploration of the universe, black holes, time, and the laws of physics.",
     "category": "Science",
     "available_quantity": 9,
-    "image_url": "https://example.com/images/exploring-the-universe.jpg"
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780553380163-L.jpg"
   },
   {
     "id": 8,
-    "title": "The Human Body",
-    "author": "Dr. Ahmed Karim",
-    "description": "An easy-to-understand introduction to the systems, organs, and functions of the human body.",
+    "title": "Cosmos",
+    "author": "Carl Sagan",
+    "description": "A fascinating journey through space, science, and humanity's place in the universe.",
     "category": "Science",
-    "available_quantity": 12,
-    "image_url": "https://example.com/images/the-human-body.jpg"
+    "available_quantity": 11,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780345539434-L.jpg"
   },
   {
     "id": 9,
-    "title": "Secrets of Nature",
-    "author": "Mina Akter",
-    "description": "A readable science book about plants, animals, ecosystems, and the natural world.",
+    "title": "The Selfish Gene",
+    "author": "Richard Dawkins",
+    "description": "A groundbreaking book explaining evolution from the perspective of genes.",
     "category": "Science",
-    "available_quantity": 3,
-    "image_url": "https://example.com/images/secrets-of-nature.jpg"
+    "available_quantity": 4,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780199291152-L.jpg"
   },
   {
     "id": 10,
-    "title": "A Dream Called Home",
-    "author": "Selina Chowdhury",
-    "description": "A moving story about family, identity, and finding a place to belong.",
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "description": "A practical guide to building good habits, breaking bad ones, and achieving lasting success.",
     "category": "Story",
-    "available_quantity": 4,
-    "image_url": "https://example.com/images/a-dream-called-home.jpg"
+    "available_quantity": 15,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg"
   },
   {
     "id": 11,
-    "title": "Clean Code Basics",
-    "author": "Imran Kabir",
-    "description": "A useful guide for writing readable, maintainable, and efficient code.",
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "description": "A classic guide to writing clean, maintainable, and professional-quality code.",
     "category": "Tech",
-    "available_quantity": 6,
-    "image_url": "https://example.com/images/clean-code-basics.jpg"
+    "available_quantity": 8,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780132350884-L.jpg"
   },
   {
     "id": 12,
-    "title": "Discovering Genetics",
-    "author": "Dr. Nusrat Jahan",
-    "description": "An introduction to genes, heredity, DNA, and the science of life itself.",
+    "title": "The Gene",
+    "author": "Siddhartha Mukherjee",
+    "description": "A captivating history of genetics and its profound impact on science and humanity.",
     "category": "Science",
-    "available_quantity": 11,
-    "image_url": "https://example.com/images/discovering-genetics.jpg"
+    "available_quantity": 7,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9781476733500-L.jpg"
   }
 ]
