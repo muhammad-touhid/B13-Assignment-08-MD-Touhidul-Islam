@@ -1,32 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
 
 export default function ProfilePage() {
-  const router = useRouter();
   const userData = authClient.useSession();
   const user = userData.data?.user;
-  const isLoading = userData.isPending || userData.status === "loading";
-
-  useEffect(() => {
-    if (!isLoading && !user) {
-      router.replace("/signIn");
-    }
-  }, [isLoading, user, router]);
-
-  if (isLoading) {
-    return (
-      <div className="flex min-h-screen items-center justify-center bg-secondary-custom">
-        <p className="text-secondary-custom">Loading...</p>
-      </div>
-    );
-  }
-
-  if (!user) return null;
 
   return (
     <section className="min-h-screen bg-secondary-custom px-4 py-12">

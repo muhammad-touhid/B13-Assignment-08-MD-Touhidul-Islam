@@ -2,12 +2,20 @@
 import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
 import { Avatar } from "@heroui/react";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const router = useRouter();
   const userData = authClient.useSession();
   const user = userData.data?.user;
   const handleSignOut = async () => {
-    await authClient.signOut();
+    await authClient.signOut({
+      fetchOptions: {
+        onSuccess: () => {
+          router.push("/sign-in");
+        },
+      },
+    });
   };
 
   return (
@@ -66,7 +74,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           {!user ? (
-            <Link href={"/signIn"}>
+            <Link href={"/sign-in"}>
               <button className="btn bg-secondary-custom rounded-full">
                 Sign In
               </button>
