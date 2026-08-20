@@ -1,3 +1,4 @@
+import BorrowBtn from "@/components/BorrowBtn";
 import Image from "next/image";
 import React from "react";
 
@@ -8,8 +9,8 @@ const BookDetails = async ({ params }) => {
   );
   const books = await res.json();
   const selectedBook = books.find((book) => book.id == id);
+  console.log("image url", selectedBook.image_url);
 
-  const handleBorrow = () => {};
   return (
     <section className="bg-secondary-custom px-4 py-12">
       <div className="mx-auto grid max-w-6xl gap-10 rounded-2xl bg-primary-custom p-6 shadow-lg md:grid-cols-2 md:p-10">
@@ -44,12 +45,7 @@ const BookDetails = async ({ params }) => {
             {selectedBook.available_quantity} copies left
           </p>
 
-          <button
-            onClick={handleBorrow}
-            className="mt-8 w-fit rounded-lg bg-secondary-custom px-6 py-3 font-semibold text-primary-custom transition hover:opacity-90"
-          >
-            Borrow This Book
-          </button>
+          <BorrowBtn />
         </div>
       </div>
     </section>
