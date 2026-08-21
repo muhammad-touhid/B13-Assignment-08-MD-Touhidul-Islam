@@ -56,7 +56,11 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="text-primary-custom text-xl font-bold">BorrowBook</a>
+          <Link href={"/"}>
+            <div className="text-primary-custom text-xl font-bold">
+              BorrowBook
+            </div>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -80,15 +84,8 @@ const Navbar = () => {
               </button>
             </Link>
           ) : (
-            <div className="flex gap-3">
-              <Avatar>
-                <Avatar.Image
-                  alt="John Doe"
-                  src="user?.image"
-                  referrerPolicy="no-referrer"
-                />
-                <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
-              </Avatar>
+            <div className="flex gap-4 items-center">
+              <p>{user?.name}</p>
               <button
                 onClick={handleSignOut}
                 className="btn bg-secondary-custom rounded-full"

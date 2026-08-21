@@ -7,7 +7,7 @@ export default async function NewArrival() {
   const books = await res.json();
 
   return (
-    <div className="bg-secondary-custom">
+    <div className="bg-secondary-custom py-10">
       <div className="container mx-auto py-5 flex items-center gap-6">
         <Marquee speed={45} gradient={false} pauseOnHover autoFill>
           <button className="rounded-lg bg-primary-custom px-6 py-3 mx-4 text-base font-semibold text-primary-custom transition hover:opacity-90 text-nowrap">

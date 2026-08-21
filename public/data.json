@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "title": "To Kill a Mockingbird",
-    "author": "Harper Lee",
-    "description": "A powerful story of racial injustice and moral growth seen through the eyes of a young girl in the American South.",
+    "title": "1984",
+    "author": "George Orwell",
+    "description": "A dystopian vision of a totalitarian future where individuality is crushed under constant surveillance.",
     "category": "Story",
-    "available_quantity": 5,
-    "image_url": "https://covers.openlibrary.org/b/isbn/9780061120084-L.jpg"
+    "available_quantity": 10,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg"
   },
   {
     "id": 2,

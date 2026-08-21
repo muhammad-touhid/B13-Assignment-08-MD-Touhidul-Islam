@@ -1,6 +1,6 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
-import { Check } from "@gravity-ui/icons";
+import Link from "next/link";
 import {
   Button,
   Card,
@@ -12,12 +12,14 @@ import {
   TextField,
 } from "@heroui/react";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export default function SignUpPage() {
   const router = useRouter();
+  const [errorMessage, setErrorMessage] = useState("");
   const onSubmit = async (e) => {
     e.preventDefault();
-
+    setErrorMessage("");
     const name = e.target.name.value;
     const image = e.target.image.value;
     const email = e.target.email.value;
@@ -33,6 +35,8 @@ export default function SignUpPage() {
 
     if (!error) {
       router.push("/login");
+    } else {
+      setErrorMessage("User Already Exist, Please Sign In");
     }
   };
   const handleSignIn = async () => {
@@ -42,8 +46,8 @@ export default function SignUpPage() {
   };
 
   return (
-    <Card className="border mx-auto w-125 py-10 mt-5">
-      <h1 className="text-center text-2xl font-bold">Sign Up</h1>
+    <Card className="border border-[#41431B] w-125 mx-auto mt-15 mb-50">
+      <h1 className="text-center text-2xl font-bold">Register </h1>
 
       <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
         <TextField isRequired name="name" type="text">
@@ -101,11 +105,12 @@ export default function SignUpPage() {
           </Description>
           <FieldError />
         </TextField>
-
+        {errorMessage && (
+          <p className="mt-2 text-sm text-red-500">{errorMessage}</p>
+        )}
         <div className="flex gap-2">
-          <Button type="submit">Submit</Button>
-          <Button type="reset" variant="secondary">
-            Reset
+          <Button type="submit" className="w-full bg-primary-custom">
+            Submit
           </Button>
         </div>
       </Form>
@@ -144,6 +149,16 @@ export default function SignUpPage() {
           </svg>
           Login with Google
         </button>
+      </div>
+      <div className="w-96 mx-auto mt-4 text-center">
+        <p className="text-sm text-gray-600">
+          Already have an account?{" "}
+          <Link href={"/register"}>
+            <span className="font-semibold text-secondary-custom hover:underline">
+              Sign In
+            </span>
+          </Link>
+        </p>
       </div>
     </Card>
   );

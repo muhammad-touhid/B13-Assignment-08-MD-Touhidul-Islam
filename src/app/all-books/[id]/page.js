@@ -13,7 +13,7 @@ const BookDetails = async ({ params }) => {
 
   return (
     <section className="bg-secondary-custom px-4 py-12">
-      <div className="mx-auto grid max-w-6xl gap-10 rounded-2xl bg-primary-custom p-6 shadow-lg md:grid-cols-2 md:p-10">
+      <div className="mx-auto grid max-w-6xl gap-10 rounded-2xl p-6 shadow-lg md:grid-cols-2 md:p-10">
         <div className="relative h-[420px] w-full overflow-hidden rounded-2xl bg-secondary-custom">
           <Image
             src={selectedBook.image_url}
@@ -25,7 +25,7 @@ const BookDetails = async ({ params }) => {
         </div>
 
         <div className="flex flex-col justify-center">
-          <span className="mb-3 inline-block w-fit rounded-full bg-secondary-custom px-4 py-1 text-sm font-semibold text-primary-custom">
+          <span className="mb-3 inline-block w-fit rounded-full bg-primary-custom px-4 py-1 text-sm font-semibold text-primary-custom">
             {selectedBook.category}
           </span>
 
@@ -33,11 +33,11 @@ const BookDetails = async ({ params }) => {
             {selectedBook.title}
           </h1>
 
-          <p className="mt-3 text-lg text-secondary-custom/90">
-            by {selectedBook.author}
+          <p className="mt-3 text-lg text-secondary-custom">
+            by <span className="font-semibold">{selectedBook.author}</span>
           </p>
 
-          <p className="mt-6 leading-8 text-secondary-custom/90">
+          <p className="mt-6 leading-8 text-secondary-custom">
             {selectedBook.description}
           </p>
 

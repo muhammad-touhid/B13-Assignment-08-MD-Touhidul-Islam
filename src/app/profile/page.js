@@ -11,7 +11,7 @@ export default function ProfilePage() {
   return (
     <section className="min-h-screen bg-secondary-custom px-4 py-12">
       <div className="mx-auto max-w-4xl rounded-2xl bg-primary-custom p-8 shadow-lg">
-        <h1 className="text-center text-3xl font-bold text-white sm:text-4xl">
+        <h1 className="text-center text-3xl font-bold text-primary-custom sm:text-4xl">
           My Profile
         </h1>
 

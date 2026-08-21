@@ -1,6 +1,6 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
-import { Check } from "@gravity-ui/icons";
+import Link from "next/link";
 import {
   Button,
   Card,
@@ -11,22 +11,26 @@ import {
   TextField,
 } from "@heroui/react";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export default function SignIn() {
   const router = useRouter();
+  const [errorMessage, setErrorMessage] = useState("");
   const onSubmit = async (e) => {
     e.preventDefault();
+    setErrorMessage("");
     const email = e.target.email.value;
     const password = e.target.password.value;
 
     const { data, error } = await authClient.signIn.email({
       email, // user email address
       password, // user password -> min 8 characters by default
-      callbackURL: "/",
     });
 
     if (!error) {
       router.push("/");
+    } else {
+      setErrorMessage("Invalid Email or Password");
     }
   };
   const handleSignIn = async () => {
@@ -36,7 +40,7 @@ export default function SignIn() {
   };
 
   return (
-    <Card className="border mx-auto w-125 py-10 mt-5">
+    <Card className="border border-[#41431B] w-125 mx-auto mt-15 mb-50">
       <h1 className="text-center text-2xl font-bold">Sign In</h1>
 
       <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
@@ -62,10 +66,13 @@ export default function SignIn() {
           <Input placeholder="Enter your password" />
           <FieldError />
         </TextField>
+        {errorMessage && (
+          <p className="mt-2 text-sm text-red-500">{errorMessage}</p>
+        )}
 
         <div className="flex gap-2">
-          <Button type="submit" className="w-full">
-            Login
+          <Button type="submit" className="w-full bg-primary-custom">
+            Sign In
           </Button>
         </div>
       </Form>
@@ -104,6 +111,17 @@ export default function SignIn() {
           </svg>
           Login with Google
         </button>
+      </div>
+
+      <div className="w-96 mx-auto mt-4 text-center">
+        <p className="text-sm text-gray-600">
+          Don't have an account?{" "}
+          <Link href={"/register"}>
+            <span className="font-semibold text-secondary-custom hover:underline">
+              Sign Up
+            </span>
+          </Link>
+        </p>
       </div>
     </Card>
   );

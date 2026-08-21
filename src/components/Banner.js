@@ -27,7 +27,7 @@ export default function Banner() {
 
           <div className="mt-8 flex justify-center">
             <Link
-              href="/books"
+              href="/all-books"
               className="inline-flex items-center rounded-lg bg-primary-custom px-6 py-3 text-base font-semibold text-primary-custom transition hover:opacity-90"
             >
               Browse Now
