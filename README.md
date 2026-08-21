@@ -1,14 +1,17 @@
 ## Project Name:
+
 # BorrowBook
 
 ## Project purpose
+
 BorrowBook is a modern online book borrowing platform designed to make it easy for users to explore available books, discover new arrivals, and manage their book-borrowing experience through a simple and responsive interface.
 
 ## Live URL
+
 Live Website: https://b13-assignment-08-md-touhidul-islam.vercel.app/
 
-
 ## Key Features:
+
 1. Browse available books
 2. Users can explore books with relevant information
 3. User can see the New Arrivals section with a scrolling marquee
@@ -19,6 +22,7 @@ Live Website: https://b13-assignment-08-md-touhidul-islam.vercel.app/
 8. Book covers and visual content
 
 ## NPM Packages Used
+
 1. next — React framework for building the web application
 2. react — Used to build the user interface
 3. react-dom — Renders React components
@@ -36,3 +40,4 @@ Live Website: https://b13-assignment-08-md-touhidul-islam.vercel.app/
 15. eslint — JavaScript and React code linting
 16. eslint-config-next — ESLint configuration and rules for Next.js
 17. react-toastify - For showing confirmation or alert messages
+18. Swiper.js - Used for the testimonial carousel

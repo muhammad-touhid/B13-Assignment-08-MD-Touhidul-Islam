@@ -9,15 +9,15 @@ export default function ProfilePage() {
   const user = userData.data?.user;
 
   return (
-    <section className="min-h-screen bg-secondary-custom px-4 py-12">
-      <div className="mx-auto max-w-4xl rounded-2xl bg-primary-custom p-8 shadow-lg">
-        <h1 className="text-center text-3xl font-bold text-primary-custom sm:text-4xl">
+    <section className="min-h-screen bg-secondary-custom px-4 pt-12">
+      <div className="mx-auto max-w-4xl rounded-2xl p-8 shadow-lg">
+        <h1 className="text-center text-3xl font-bold text-secondary-custom sm:text-4xl">
           My Profile
         </h1>
 
         <div className="mt-10 grid gap-8 md:grid-cols-[220px_1fr]">
           <div className="flex justify-center">
-            <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-secondary-custom bg-secondary-custom">
+            <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-[#F8F3E1] bg-secondary-custom">
               <Image
                 src={user?.image || "/default-avatar.png"}
                 alt={user?.name || "User"}
@@ -27,23 +27,23 @@ export default function ProfilePage() {
             </div>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-6 pt-5 pb-20">
             <div>
-              <p className="text-sm text-primary-custom/80">Name</p>
-              <h2 className="text-xl font-semibold text-primary-custom">
+              <p className="text-sm text-primary-custom/80">Name:</p>
+              <h2 className="text-xl font-semibold text-secondary-custom">
                 {user?.name || "N/A"}
               </h2>
             </div>
 
             <div>
-              <p className="text-sm text-primary-custom/80">Email</p>
-              <h2 className="text-xl font-semibold text-primary-custom">
+              <p className="text-sm text-primary-custom/80">Email:</p>
+              <h2 className="text-xl font-semibold text-secondary-custom">
                 {user?.email || "N/A"}
               </h2>
             </div>
             <div>
               <Link href={"/update-profile"}>
-                <button className="btn bg-secondary-custom text-secondary-custom">
+                <button className="btn bg-primary-custom text-primary-custom">
                   Edit Your Profile
                 </button>
               </Link>

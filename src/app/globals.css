@@ -14,3 +14,8 @@
 .text-secondary-custom {
   color: #41431b;
 }
+
+.testimonial-swiper {
+  --swiper-navigation-color: #41431b;
+  --swiper-pagination-color: #41431b;
+}
