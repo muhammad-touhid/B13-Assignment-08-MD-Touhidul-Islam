@@ -9,6 +9,7 @@ import {
   Label,
   TextField,
 } from "@heroui/react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export default function SignUpPage() {
@@ -36,28 +37,36 @@ export default function SignUpPage() {
   };
 
   return (
-    <Card className="border border-[#41431B] w-125 mx-auto mt-15 mb-50">
-      <h1 className="text-center text-2xl font-bold">Update Your Profile</h1>
-
-      <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
-        <TextField name="name" type="text">
-          <Label>Name</Label>
-          <Input placeholder="Enter your name" />
-          <FieldError />
-        </TextField>
-
-        <TextField name="image" type="text">
-          <Label>Image URL</Label>
-          <Input placeholder="Image URL" />
-          <FieldError />
-        </TextField>
-
-        <div className="flex gap-2">
-          <Button type="submit" className="bg-primary-custom">
-            Update
-          </Button>
-        </div>
-      </Form>
-    </Card>
+    <div className="px-6">
+      <Card className="border border-[#41431B] w-full md:w-125 mx-auto mt-15 mb-50">
+        <h1 className="text-center text-2xl font-bold">Update Your Profile</h1>
+        <Form
+          className="flex w-full mx-auto flex-col gap-4"
+          onSubmit={onSubmit}
+        >
+          <TextField name="name" type="text">
+            <Label>Name</Label>
+            <Input placeholder="Enter your name" className="w-full" />
+            <FieldError />
+          </TextField>
+          <TextField name="image" type="text">
+            <Label>Image URL</Label>
+            <Input placeholder="Image URL" className="w-full" />
+            <FieldError />
+          </TextField>
+          <div className="flex gap-2">
+            <Button type="submit" className="bg-primary-custom">
+              Update
+            </Button>
+            <Button
+              type="submit"
+              className="bg-secondary-custom text-secondary-custom"
+            >
+              <Link href={"/profile"}>Cancel</Link>
+            </Button>
+          </div>
+        </Form>
+      </Card>
+    </div>
   );
 }

@@ -88,7 +88,7 @@ const Navbar = () => {
               </button>
             </Link>
           ) : (
-            <div className="flex gap-4 items-center">
+            <div className="flex flex-col sm:flex-row gap-4 items-center">
               <p>{user?.name}</p>
               <button
                 onClick={handleSignOut}
