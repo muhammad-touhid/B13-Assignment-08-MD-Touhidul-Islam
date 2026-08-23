@@ -4,6 +4,7 @@ import {
   FaLinkedinIn,
   FaXTwitter,
 } from "react-icons/fa6";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -11,7 +12,9 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-12">
         <div className="grid gap-10 md:grid-cols-2">
           <div>
-            <h2 className="text-3xl font-bold">BorrowBook</h2>
+            <Link href={"/"}>
+              <h2 className="text-3xl font-bold">BorrowBook</h2>
+            </Link>
             <p className="mt-4 max-w-md text-sm leading-7 ">
               BorrowBook is an online book borrowing platform that makes reading
               simple, affordable, and accessible. We help readers borrow and
@@ -30,40 +33,43 @@ export default function Footer() {
             </ul>
 
             <div className="mt-5 flex items-center gap-4">
-              <a
-                href="#"
+              <Link
+                href={"#"}
                 aria-label="Facebook"
-                className="rounded-full border border-white/20 p-3 text-white transition hover:bg-white hover:text-primary-custom"
+                className="rounded-full border border-white/20 p-3 text-primary-csutom  "
               >
                 <FaFacebookF />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href={"#"}
                 aria-label="Instagram"
-                className="rounded-full border border-white/20 p-3 text-white transition hover:bg-white hover:text-primary-custom"
+                className="rounded-full border border-white/20 p-3 text-primary-csutom "
               >
                 <FaInstagram />
-              </a>
-              <a
-                href="#"
+              </Link>
+
+              <Link
+                href={"#"}
                 aria-label="LinkedIn"
-                className="rounded-full border border-white/20 p-3 text-white transition hover:bg-white hover:text-primary-custom"
+                className="rounded-full border border-white/20 p-3 text-primary-csutom  "
               >
                 <FaLinkedinIn />
-              </a>
-              <a
-                href="#"
+              </Link>
+
+              <Link
+                href={"#"}
                 aria-label="X"
-                className="rounded-full border border-white/20 p-3 text-white transition hover:bg-white hover:text-primary-custom"
+                className="rounded-full border border-white/20 p-3 text-primary-csutom  "
               >
                 <FaXTwitter />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
 
         <div className="mt-10 border-t border-white/15 pt-6 text-center text-sm text-white/70">
-          © {new Date().getFullYear()} BorrowBook. All rights reserved.
+          © {new Date().getFullYear()} <Link href={"/"}>BorrowBook</Link>. All
+          rights reserved.
         </div>
       </div>
     </footer>
