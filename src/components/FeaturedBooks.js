@@ -1,4 +1,4 @@
-import BookCard from "./BookCard";
+import BookCard from "./shared/BookCard";
 
 const FeaturedBooks = async () => {
   const res = await fetch(

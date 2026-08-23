@@ -1,4 +1,4 @@
-import BorrowBtn from "@/components/BorrowBtn";
+import BorrowBtn from "@/components/shared/BorrowBtn";
 import Image from "next/image";
 import React from "react";
 

@@ -10,7 +10,7 @@ BorrowBook is a modern online book borrowing platform designed to make it easy f
 
 Live Website: https://b13-assignment-08-md-touhidul-islam.vercel.app/
 
-## Key Features:
+## Key Features: 
 
 1. Browse available books
 2. Users can explore books with relevant information

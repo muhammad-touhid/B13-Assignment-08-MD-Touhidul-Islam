@@ -1,5 +1,5 @@
-import BookCard from "@/components/BookCard";
-import SearchBtn from "@/components/SearchBtn";
+import BookCard from "@/components/shared/BookCard";
+import SearchBtn from "@/components/shared/SearchBtn";
 import Link from "next/link";
 
 const AllBooks = async ({ searchParams }) => {

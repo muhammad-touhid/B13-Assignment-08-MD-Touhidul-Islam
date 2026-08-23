@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "title": "1984",
-    "author": "George Orwell",
-    "description": "A dystopian vision of a totalitarian future where individuality is crushed under constant surveillance.",
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "description": "A witty exploration of love, class, and marriage in early 19th-century English society.",
     "category": "Story",
-    "available_quantity": 10,
-    "image_url": "https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg"
+    "available_quantity": 7,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780141439518-L.jpg"
   },
   {
     "id": 2,

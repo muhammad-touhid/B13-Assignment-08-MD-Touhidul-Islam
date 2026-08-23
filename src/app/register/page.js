@@ -34,7 +34,7 @@ export default function SignUpPage() {
     });
 
     if (!error) {
-      router.push("/login");
+      router.push("/sign-in");
     } else {
       setErrorMessage("User Already Exist, Please Sign In");
     }
@@ -48,7 +48,9 @@ export default function SignUpPage() {
   return (
     <div className="px-6">
       <Card className="border border-[#41431B] w-full md:w-125 mx-auto mt-15 mb-50">
-        <h1 className="text-center text-2xl font-bold">Register </h1>
+        <h1 className="text-center text-2xl font-bold">
+          Register for BorrowBook{" "}
+        </h1>
         <Form
           className="flex w-full mx-auto flex-col gap-4"
           onSubmit={onSubmit}
@@ -108,7 +110,7 @@ export default function SignUpPage() {
           )}
           <div className="flex gap-2">
             <Button type="submit" className="w-full bg-primary-custom">
-              Submit
+              Register
             </Button>
           </div>
         </Form>
