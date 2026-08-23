@@ -36,9 +36,9 @@ const AllBooks = async ({ searchParams }) => {
           <SearchBtn />
         </div>
 
-        <div className="grid grid-cols-12 gap-6">
-          <div className="col-span-2">
-            <p className="bg-primary-custom text-primary-custom p-2 rounded-xl text-center">
+        <div className="grid grid-cols-12 gap-3 md:gap-6">
+          <div className="md:col-span-2 col-span-3 text-sm md:text-lg">
+            <p className="bg-primary-custom text-primary-custom p-1 md:p-2 rounded-xl text-center">
               Category
             </p>
 
@@ -66,7 +66,7 @@ const AllBooks = async ({ searchParams }) => {
           </div>
 
           {filteredBooks.length > 0 ? (
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 col-span-10">
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 md:col-span-10 col-span-9">
               {filteredBooks.map((book) => (
                 <BookCard key={book.id} book={book} />
               ))}

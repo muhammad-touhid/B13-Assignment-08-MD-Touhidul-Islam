@@ -22,11 +22,15 @@ const Navbar = () => {
     <div className="w-full bg-primary-custom mx-auto">
       <div className="navbar container px-4 mx-auto text-primary-custom shadow-sm">
         <div className="navbar-start">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div className="dropdown z-50">
+            <div
+              tabIndex={0}
+              role="button"
+              className="cursor-pointer p-3 lg:hidden"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-5 w-5 text-primary-custom"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -42,7 +46,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex="-1"
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-secondary-custom text-secondary-custom rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
                 <Link href={"/"}>Home</Link>

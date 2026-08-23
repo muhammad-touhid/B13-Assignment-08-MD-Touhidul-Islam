@@ -19,3 +19,10 @@
   --swiper-navigation-color: #41431b;
   --swiper-pagination-color: #41431b;
 }
+
+@media (max-width: 767px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    --swiper-navigation-size: 20px;
+  }
+}
